@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #4f72b0, #2f3d69);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Estilo do campo de input */
+input[type="text"] {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    margin-right: 10px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+/* Estilo do botão */
+button {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    transition: background-color 0.3s;
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+    background-color: #e67e22;
+}
+
+/* Estilo da área de exibição do clima */
+#weather {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+#weather h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#weather p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    input[type="text"], button {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    #weather {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* Responsividade para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    input[type="text"], button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    #weather {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    #weather h3 {
+        font-size: 22px;
+    }
+
+    #weather p {
+        font-size: 16px;
+    }
+}
